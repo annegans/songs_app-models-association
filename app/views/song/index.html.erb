@@ -1,0 +1,11 @@
+<h2>This is the index page</h2>
+<ul>
+  <% @songs.each do |song| %>
+    <li>
+      <span class="song_title"><%= song.name %></span>
+      by
+      <%= song.artist %>
+      (released as part of: <%= song.album_name %>)
+    </li>
+  <% end %>
+</ul>
